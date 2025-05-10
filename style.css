@@ -180,8 +180,8 @@ body {
 
 .projects-grid {
   display: grid;
-  width: 66%;
-  margin-inline: auto;
+  width: 100%;
+  margin-inline: 0;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
   
@@ -307,6 +307,13 @@ body {
   }
   .section {
     padding: 80px 40px;
+  }
+  .projects-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
 }
 
